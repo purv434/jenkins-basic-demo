@@ -30,6 +30,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>jenkins-basic-demo</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
