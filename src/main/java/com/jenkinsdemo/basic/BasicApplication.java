@@ -3,6 +3,8 @@ package com.jenkinsdemo.basic;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import javax.annotation.PostConstruct;
+
 @SpringBootApplication
 public class BasicApplication {
 
@@ -10,4 +12,8 @@ public class BasicApplication {
 		SpringApplication.run(BasicApplication.class, args);
 	}
 
+	@PostConstruct
+	public void init(){
+		System.out.println(":::::::::::started::::::::::::::");
+	}
 }
