@@ -5,6 +5,6 @@
 #ENTRYPOINT ["java","-jar","./target/jenkins-demo.jar"]
 
 FROM openjdk:8
-ADD target/*.jar app.jar
-ENTRYPOINT ["java","-jar","app.jar"]
+ADD target/*.jar jenkins-basic-demo.jar
+ENTRYPOINT ["java","-jar","jenkins-basic-demo.jar"]
 EXPOSE 8182
